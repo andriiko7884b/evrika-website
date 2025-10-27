@@ -680,3 +680,14 @@ nav a.active::after {
 #contacts .team-grid {
 justify-content: center; /* Центрує картки, якщо їх 1 або 2 */
 }
+/* --- ФІКС ДЛЯ МОБІЛЬНОЇ ТАБЛИЦІ --- */
+@media (max-width: 992px) {
+    .discussion-table td[data-label="Тема"] {
+        /* Повертаємо нормальне вирівнювання для довгого тексту */
+        text-align: left;
+
+        /* Додамо трохи відступів, щоб текст не прилипав до країв */
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+}
